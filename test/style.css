@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
 }
 
-span{
+.L-title{
     font-size: 65px;
 }
 .fa-yin-yang{
@@ -58,6 +58,7 @@ ul li a{
     font-size: 20px;
 }
 
+
 /* Nav End*/
 
 
@@ -66,25 +67,87 @@ footer {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr; /* Two equal columns */
-    grid-gap: 20px; /* Space between the columns */
+    grid-template-rows: 1fr;
     padding: 20px;
-    min-height: 200px; /* Ensure footer has enough height */
-    position: relative; /* Make sure the footer stays at the bottom */
-    bottom: 0;
-    width: 100%;
+    height: 47.5vh;
+    box-sizing: border-box;
+
 }
 
 .info-left {
     grid-column: 1; /* First column */
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    margin-left: 20%;
+
+    
+}
+.info-left > ul{
+    
+    
+}
+ul li {
+    margin: 0; /* Ensures no extra space around list items */
+    padding: 0; /* Resets padding for list items */
 }
 
 .info-right {
     grid-column: 3; /* Second column */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
 }
 
 .info-left .f-logo > .fa-yin-yang, .info-left .f-logo > span{
     font-size: 20px;
     /* Add styles for your logo */
+}
+.info-left .f-logo{
+    margin-bottom: 20px;
+
+}
+.info-left > p{
+    margin-bottom: 60px;
+
+}
+.info-right div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: calc(50% - 45px);
+
+}
+.info-right div  ul{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.info-right div ul li{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+}
+.info-right div ul li a{
+    font-size: 0.875em;
+}
+.subscribtion{
+    margin-bottom: 15px;
+}
+input{
+    width:calc(100% - 30px);
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    box-sizing: border-box;
+    
+}
+.copyright{
+    border-top: 1px solid whitesmoke;
+
 }
 
 
