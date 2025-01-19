@@ -1,0 +1,144 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+:root{
+    --white: #fff
+}
+body {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
+    height: 100vh; /* Full viewport height */
+    max-width: 100%;
+}
+/* Nav Start*/
+header {
+    background-color:var(--white);
+    border-bottom: 1px solid whitesmoke;    
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    font-size: 65px;
+}
+.fa-yin-yang{
+    font-size: 65px;
+    animation:  rotate 1s linear infinite ;
+}
+@keyframes rotate {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+    
+}
+.Links{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 70%);
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    justify-content:space-evenly;
+    width: 100%;
+    max-width: 100%;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* Nav End*/
+
+
+/*Foote Start*/
+footer {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr; /* Two equal columns */
+    grid-gap: 20px; /* Space between the columns */
+    padding: 20px;
+    min-height: 200px; /* Ensure footer has enough height */
+    position: relative; /* Make sure the footer stays at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+.info-left {
+    grid-column: 1; /* First column */
+}
+
+.info-right {
+    grid-column: 3; /* Second column */
+}
+
+.info-left .f-logo > .fa-yin-yang, .info-left .f-logo > span{
+    font-size: 20px;
+    /* Add styles for your logo */
+}
+
+
+
+/*Footer End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main {
+    background-color: whitesmoke;
+    display: flex; /* Useful if you want to align items inside 
+    overflow-y: auto; /* Allows scrolling if content exceeds available space 
+    margin: 20px 0px;
+}
+
+footer {
+    background-color: blanchedalmond;
+}
+
+
+article{
+    background-color: #fff;
+    max-width: 235.2px;
+    height: 370px; ; width:235.2px ;
+    border-radius: 25px;
+} */
