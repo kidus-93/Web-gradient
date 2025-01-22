@@ -23,14 +23,16 @@ header {
     padding: 10px 0px;
     position: fixed;
     width: 100%;
+    opacity: 0.85;
 }
 
 .L-title{
-    font-size: 65px;
+    font-size: 55px;
+    position: absolute;
 }
-.fa-yin-yang{
-    font-size: 65px;
-    animation:  rotate 1s linear infinite ;
+.yin-yang{
+    /* font-size: 65px; */
+    animation:  rotate 1s ease-in-out 1 ;
 }
 @keyframes rotate {
     0%{
@@ -61,6 +63,12 @@ ul li a{
     font-size: 20px;
 }
 
+.links ul li a:hover{
+    text-decoration: none;
+    color:;
+    font-size: 20px;
+    
+}
 
 /* Nav End*/
 
@@ -70,7 +78,7 @@ ul li a{
 
 main {
     background-color: rgb(246, 246, 246);
-    margin: 20px 0px;
+    margin: 75px 0px 20px 0px;
     
 
     
@@ -123,9 +131,33 @@ article:hover{
     /* border: none; */
     
 }
-.circle-1:focus, .circle-1:active {
-    transform: scale(20);
+.circle-1:not(checked){
+    animation: expand  3s linear  ;
     z-index: 1000;
+}
+.circle-1:checked{
+    animation: reduce  3s linear  ;
+    z-index: 1000;
+}
+@keyframes expand {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(20);
+
+    }
+    
+}
+@keyframes reduce {
+    0%{
+        transform: scale(20);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+    
 }
 .circle-1 {background:linear-gradient(#ff9a9e,#fad0c4);}
 .circle-2 {background:linear-gradient(#a18cd1,#fbc2eb);}
@@ -190,7 +222,7 @@ ul li {
 
 }
 
-.info-left .f-logo > .fa-yin-yang, .info-left .f-logo > span{
+.info-left .f-logo > .yin-yang, .info-left .f-logo > span{
     font-size: 20px;
     /* Add styles for your logo */
 }

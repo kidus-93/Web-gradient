@@ -12,7 +12,7 @@
     - [ ] like when hover add line going from the first character of word till end
     - [ ] also change the color on hover
 -[x] make it a fixed
--[ ] make it transparent so you can see the content pass through
+-[x] make it transparent so you can see the content pass through
 
 # main
 - [ ] fix the circle when when clicked it should look like the website

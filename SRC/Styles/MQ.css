@@ -1,0 +1,19 @@
+/* For small phones in portrait mode (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    /* Styles for small phones */
+}
+
+/* For phones in landscape mode (min-width: 601px and max-width: 768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    /* Styles for phones in landscape mode */
+}
+
+/* For tablets in portrait mode (min-width: 600px and max-width: 900px) */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    /* Styles for tablets in portrait mode */
+}
+
+/* For tablets in landscape mode (min-width: 901px and max-width: 1200px) */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    /* Styles for tablets in landscape mode */
+}
