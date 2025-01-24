@@ -13,6 +13,7 @@ body {
     grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
     height: 100vh; /* Full viewport height */
     max-width: 100%;
+    overflow: auto;
 }
 /* Nav Start*/
 header {
@@ -64,8 +65,7 @@ ul li a{
 }
 
 .links ul li a:hover{
-    text-decoration: none;
-    color:;
+    text-decoration: underline;
     font-size: 20px;
     
 }
@@ -131,15 +131,39 @@ article:hover{
     /* border: none; */
     
 }
-.circle-1:not(checked){
-    animation: expand  3s linear  ;
+.circle-1:active,
+.circle-2:active,
+.circle-3:active,
+.circle-4:active,
+.circle-5:active,
+.circle-6:active,
+.circle-7:active,
+.circle-8:active,
+.circle-9:active,
+.circle-11:active,
+.circle-10:active,
+.circle-12:active,
+.circle-13:active,
+.circle-14:active,
+.circle-15:active,
+.circle-16:active,
+.circle-17:active,
+.circle-18:active{
+    /* animation: expand  10s linear infinite ; */
+    transform: scale(14);
+    /* transition: ; */
+    
     z-index: 1000;
 }
-.circle-1:checked{
+.copy{
+    text-decoration:underline;
+    text-decoration-thickness: 1px;
+}
+/* .circle-1:checked{
     animation: reduce  3s linear  ;
     z-index: 1000;
-}
-@keyframes expand {
+} */
+/* @keyframes expand {
     0%{
         transform: scale(1);
     }
@@ -148,8 +172,11 @@ article:hover{
 
     }
     
+} */
+.cir{
+    cursor:crosshair;
 }
-@keyframes reduce {
+/* @keyframes reduce {
     0%{
         transform: scale(20);
     }
@@ -158,25 +185,29 @@ article:hover{
     }
     
     
-}
-.circle-1 {background:linear-gradient(#ff9a9e,#fad0c4);}
-.circle-2 {background:linear-gradient(#a18cd1,#fbc2eb);}
-.circle-3 {background:linear-gradient(#fad0c4,#ffd1ff);}
-.circle-4 {background:linear-gradient(#ffecd2,#fcb69f);}
-.circle-5 {background:linear-gradient(#8EC5FC,#E0C3FC);}
-.circle-6 {background:linear-gradient(#D9AFD9,#97D9E1);}
-.circle-7 {background:linear-gradient(#00DBDE,#FC00FF);}
-.circle-8 {background:linear-gradient(#08AEEA,#2AF598);}
-.circle-9 {background:linear-gradient(#8BC6EC,#9599E2);}
-.circle-10 {background:linear-gradient(#85FFBD,#FFFB7D);}
-.circle-11 {background:linear-gradient(#FBAB7E,#F7CE68);}
-.circle-12 {background:linear-gradient(#FFE53B,#FF2525);}
-.circle-13 {background:linear-gradient(#21D4FD,#B721FF);}
-.circle-14 {background:linear-gradient(#F4D03F,#16A085);}
-.circle-15 {background:linear-gradient(#fdfbfb,#ebedee);}
-.circle-16 {background:linear-gradient(#4facfe,#00f2fe);}
-.circle-17 {background:linear-gradient(#30cfd0,#330867);}
-.circle-18 {background:linear-gradient(#fff1eb,#ace0f9);}
+} */
+ .L-foot{
+    font-size: 32px;      
+ }
+
+.circle-1 {background:linear-gradient(#ff9a9e,#fad0c4); transition: all 0.8s ease;}
+.circle-2 {background:linear-gradient(#a18cd1,#fbc2eb); transition: all 0.8s ease}
+.circle-3 {background:linear-gradient(#fad0c4,#ffd1ff); transition: all 0.8s ease}
+.circle-4 {background:linear-gradient(#ffecd2,#fcb69f); transition: all 0.8s ease}
+.circle-5 {background:linear-gradient(#8EC5FC,#E0C3FC); transition: all 0.8s ease}
+.circle-6 {background:linear-gradient(#D9AFD9,#97D9E1); transition: all 0.8s ease}
+.circle-7 {background:linear-gradient(#00DBDE,#FC00FF); transition: all 0.8s ease}
+.circle-8 {background:linear-gradient(#08AEEA,#2AF598); transition: all 0.8s ease}
+.circle-9 {background:linear-gradient(#8BC6EC,#9599E2); transition: all 0.8s ease}
+.circle-10 {background:linear-gradient(#85FFBD,#FFFB7D); transition: all 0.8s ease}
+.circle-11 {background:linear-gradient(#FBAB7E,#F7CE68); transition: all 0.8s ease}
+.circle-12 {background:linear-gradient(#FFE53B,#FF2525); transition: all 0.8s ease}
+.circle-13 {background:linear-gradient(#21D4FD,#B721FF); transition: all 0.8s ease}
+.circle-14 {background:linear-gradient(#F4D03F,#16A085); transition: all 0.8s ease}
+.circle-15 {background:linear-gradient(#fdfbfb,#ebedee); transition: all 0.8s ease}
+.circle-16 {background:linear-gradient(#4facfe,#00f2fe); transition: all 0.8s ease}
+.circle-17 {background:linear-gradient(#30cfd0,#330867); transition: all 0.8s ease}
+.circle-18 {background:linear-gradient(#fff1eb,#ace0f9); transition: all 0.8s ease}
 
 
 
@@ -228,6 +259,8 @@ ul li {
 }
 .info-left .f-logo{
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 
 }
 .info-left > p{

@@ -6,6 +6,9 @@
 /* For phones in landscape mode (min-width: 601px and max-width: 768px) */
 @media screen and (min-width: 601px) and (max-width: 768px) {
     /* Styles for phones in landscape mode */
+    .Links{
+        display: none;
+    }
 }
 
 /* For tablets in portrait mode (min-width: 600px and max-width: 900px) */
